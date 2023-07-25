@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>P3G4D0</title>
+    <style>
+        @keyframes fade-in {
+          from {
+            opacity: 0;
+            transform: translateY(-100%);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .container {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          height: 100vh;
+        }
+
+        .text {
+          position: relative;
+          top: 0;
+          animation: fade-in 2s ease-in-out;
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 20px;
+        }
+
+        .container2 {
+          position: relative;
+          height: 100vh;
+        }
+
+        @keyframes slide-in {
+          0% {
+            left: -100%;
+            opacity: 0;
+          }
+          50% {
+            opacity: 0.5;
+          }
+          100% {
+            left: 0;
+            opacity: 1;
+          }
+        }
+
+        .img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(0.5);
+          animation: slide-in 2s linear;
+          max-width: 80vw;
+          max-height: 80vh;
+        }
+    </style>
+</head>
+<body bgcolor="000034">
+    <div class="container">
+        <div class="text"><strong>P3G4D0</strong></div>
+    </div>
+    <div class="container2">
+        <img class="img" src="https://cdn.discordapp.com/attachments/1132440506564091995/1133155600545611786/IMG_20230718_190752_735.jpg" alt="Imagen">
+    </div>
+</body>
+<head>
+    <style>
+        /* Styling para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos del menú */
+        .menu {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            position: relative;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .menu ul li:hover ul {
+            display: block;
+        }
+
+        .menu ul ul {
+            display: none;
+            position: absolute;
+            top: 40px;
+        }
+
+        .menu ul ul li {
+            width: 200px;
+            float: none;
+            display: list-item;
+            position: relative;
+        }
+
+        .menu ul ul li a {
+            padding: 10px 15px;
+            color: #fff;
+            background-color: #555;
+        }
+
+        .menu ul ul li a:hover {
+            background-color: #777;
+        }
+
+        /* Animación */
+        .menu ul li:hover {
+            background-color: #555;
+        }
+
+        .menu > ul > li {
+            float: left;
+        }
+
+        .menu ul ul ul {
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Producto 1</a></li>
+                    <li><a href="#">Producto 2</a></li>
+                    <li><a href="#">Producto 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Servicios</a>
+                <ul>
+                    <li><a href="#">Servicio 1</a></li>
+                    <li><a href="#">Servicio 2</a></li>
+                    <li><a href="#">Servicio 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+</body>
+</html>
